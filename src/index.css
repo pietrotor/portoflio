@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  body {
+    font-family: 'onest-variable';
+    color: white;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Thin.ttf');
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-ExtraLight.ttf');
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Light.ttf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Regular.ttf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Medium.ttf');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-SemiBold.ttf');
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Bold.ttf');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-ExtraBold.ttf');
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: 'onest-variable';
+    src: local(''), url('/fonts/Onest-Black.ttf');
+    font-weight: 900;
+  }
+
+  h1 {
+    @apply mb-2 text-6xl font-bold;
+  }
+  h2 {
+    @apply mb-[6px] text-5xl font-bold;
+  }
+  h3 {
+    @apply mb-1 text-4xl font-bold;
+  }
+  h4 {
+    @apply mb-1 text-3xl font-bold;
+  }
+  h5 {
+    @apply mb-1 text-2xl font-bold;
+  }
+  p {
+    @apply text-lg leading-[1.85rem] text-tertiary;
+  }
+}

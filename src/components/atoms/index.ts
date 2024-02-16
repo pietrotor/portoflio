@@ -1,1 +1,5 @@
-export * from "./Button";
+export * from './Button'
+export * from './Badge'
+export * from './Input'
+export * from './TextArea'
+export * from './Spinner'
