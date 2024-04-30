@@ -19,7 +19,9 @@ function ProjectCard({
       <div className="to absolute left-0 top-0 flex h-full w-full flex-col justify-between bg-gradient-to-b from-black/5 to-black/60 p-6 opacity-0 transition-all duration-500 group-hover:opacity-100 md:p-8">
         <div className="flex w-full justify-end">
           {!!href && (
-            <Button className="!w-fit !rounded-full">See details</Button>
+            <a href={href} target="_blank">
+              <Button className="!w-fit !rounded-full">See details</Button>
+            </a>
           )}
         </div>
         <div>
