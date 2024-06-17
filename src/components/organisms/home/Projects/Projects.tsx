@@ -29,11 +29,20 @@ const PROJECTS: TCardProject[][] = [
     {
       size: 650,
       project: {
-        href: 'https://neoled-bol.com/',
-        description: '',
-        image: '/assets/Home/neoledecommerce.png',
-        technologies: ['NextJs', 'React', 'Redux', 'Typescript'],
-        title: 'NeoLed'
+        href: 'https://funfitbo.shop/',
+        description:
+          'Developed an ecommerce platform for FunFit with integrated point-of-sale, real-time stock control, and automated electronic invoicing for streamlined operations and efficient customer service.',
+        image: '/assets/Home/Funfit.png',
+        technologies: [
+          'NextJs',
+          'React',
+          'Zustand',
+          'Typescript',
+          'Graphql',
+          'NodeJs',
+          'Express'
+        ],
+        title: 'FunFit'
       }
     }
   ],
@@ -45,7 +54,14 @@ const PROJECTS: TCardProject[][] = [
         description:
           'First real estate investment platform in Bolivia completely online, connected with Web 3, Blockchain and smart contracts',
         image: '/assets/Home/Anft.png',
-        technologies: ['NextJs', 'React', 'Redux', 'Typescript'],
+        technologies: [
+          'NextJs',
+          'React',
+          'Redux',
+          'Typescript',
+          'Tailwind',
+          'Web3'
+        ],
         title: 'ANFT'
       }
     },

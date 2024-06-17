@@ -16,7 +16,7 @@ function ProjectCard({
         }
         className="h-full w-full object-cover"
       />
-      <div className="to absolute left-0 top-0 flex h-full w-full flex-col justify-between bg-gradient-to-b from-black/5 to-black/60 p-6 opacity-0 transition-all duration-500 group-hover:opacity-100 md:p-8">
+      <div className="to absolute left-0 top-0 flex h-full w-full flex-col justify-between bg-gradient-to-b from-black/30 to-black/90 p-6 opacity-0 transition-all duration-500 group-hover:opacity-100 md:p-8">
         <div className="flex w-full justify-end">
           {!!href && (
             <a href={href} target="_blank">
