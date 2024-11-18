@@ -35,7 +35,7 @@ function Presentation() {
         <h3 className="font-medium">Fullstack Developer</h3>
         <p>
           Developer with{' '}
-          <span className="font-semibold text-white">2 year of experience</span>
+          <span className="font-semibold text-white">3 year of experience</span>
           , from Bolivia. Committed about creating user experiences and web
           applications. Dedicated to delivering exceptional results and
           maintaining meticulous attention to detail in all my work.

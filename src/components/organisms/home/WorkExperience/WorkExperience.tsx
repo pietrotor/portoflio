@@ -18,7 +18,10 @@ function WorkExperience() {
               effective software solutions.
             </p>
             <p className="mt-4 font-bold text-white">Tech Stack</p>
-            <p>React, NextJs, Redux, Storybook, NodeJS, Express, Mongodb.</p>
+            <p>
+              Angular, NodeJS, Express, RxJS, NgRx, Storybook, Mongodb,
+              Postgresql, Rabbitmq, Grapqhl, Rest Services.
+            </p>
             <hr className="mt-5  w-full bg-tertiary" />
           </div>
         </div>
@@ -38,7 +41,7 @@ function WorkExperience() {
               boasts thousands of active users and significant investment.
             </p>
             <p className="mt-4 font-bold text-white">Tech Stack</p>
-            <p>React, NextJs, Redux, NextUi</p>
+            <p>Angular, RxJS, NgRx, Tailwind, Web3.</p>
             <hr className="mt-6 w-full bg-tertiary" />
           </div>
         </div>

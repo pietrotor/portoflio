@@ -22,7 +22,14 @@ const PROJECTS: TCardProject[][] = [
         description:
           'An ecommerce platform with integrated quoting system for streamlined product requests and efficient administrative management.',
         image: '/assets/Home/Ferroblack.png',
-        technologies: ['NextJs', 'React', 'Redux', 'Apollo'],
+        technologies: [
+          'Angular',
+          'Nodejs',
+          'Apollo-angular',
+          'Typescript',
+          'MySql',
+          'Prisma'
+        ],
         title: 'Ferroblack'
       }
     },
@@ -34,12 +41,13 @@ const PROJECTS: TCardProject[][] = [
           'Developed an ecommerce platform for FunFit with integrated point-of-sale, real-time stock control, and automated electronic invoicing for streamlined operations and efficient customer service.',
         image: '/assets/Home/Funfit.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Zustand',
+          'Angular',
+          'Ngrx',
+          'Tailwind',
           'Typescript',
           'Graphql',
           'NodeJs',
+          'Postgresql',
           'Express'
         ],
         title: 'FunFit'
@@ -54,14 +62,7 @@ const PROJECTS: TCardProject[][] = [
         description:
           'First real estate investment platform in Bolivia completely online, connected with Web 3, Blockchain and smart contracts',
         image: '/assets/Home/Anft.png',
-        technologies: [
-          'NextJs',
-          'React',
-          'Redux',
-          'Typescript',
-          'Tailwind',
-          'Web3'
-        ],
+        technologies: ['Angular', 'Ngrx', 'Typescript', 'Tailwind', 'Web3'],
         title: 'ANFT'
       }
     },
@@ -91,9 +92,8 @@ const PROJECTS: TCardProject[][] = [
           'Point of sale system, with multi-branch sales record with inventory record, product production and quote for events',
         image: '/assets/Home/el_sao.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Redux',
+          'Angular',
+          'Ngrx',
           'Typescript',
           'Graphql',
           'Node',
