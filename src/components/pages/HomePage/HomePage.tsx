@@ -12,6 +12,7 @@ function HomePage() {
       <Presentation />
       <WorkExperience />
       <Projects />
+
       <div className="w-full pb-24">
         <Contact />
       </div>
