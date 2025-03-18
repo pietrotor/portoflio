@@ -1,3 +1,4 @@
+import { TechBadgeEnum } from '@components/atoms'
 import { ProjectCard } from '@components/molecules'
 
 type TProject = {
@@ -5,7 +6,8 @@ type TProject = {
   image: string
   title: string
   description: string
-  technologies: string[]
+  technologies: TechBadgeEnum[]
+  position?: 'left' | 'right'
 }
 
 type TCardProject = {
@@ -22,8 +24,16 @@ const PROJECTS: TCardProject[][] = [
         description:
           'An ecommerce platform with integrated quoting system for streamlined product requests and efficient administrative management.',
         image: '/assets/Home/Ferroblack.png',
-        technologies: ['NextJs', 'React', 'Redux', 'Apollo'],
-        title: 'Ferroblack'
+        technologies: [
+          TechBadgeEnum.NEXTJS,
+          TechBadgeEnum.REACT,
+          TechBadgeEnum.AWS,
+          TechBadgeEnum.REDUX,
+          TechBadgeEnum.GRAPHQL,
+          TechBadgeEnum.MONGODB
+        ],
+        title: 'Ferroblack',
+        position: 'left'
       }
     },
     {
@@ -34,15 +44,16 @@ const PROJECTS: TCardProject[][] = [
           'Developed an ecommerce platform for FunFit with integrated point-of-sale, real-time stock control, and automated electronic invoicing for streamlined operations and efficient customer service.',
         image: '/assets/Home/Funfit.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Zustand',
-          'Typescript',
-          'Graphql',
-          'NodeJs',
-          'Express'
+          TechBadgeEnum.NEXTJS,
+          TechBadgeEnum.REACT,
+          TechBadgeEnum.ZUSTAND,
+          TechBadgeEnum.GRAPHQL,
+          TechBadgeEnum.NODEJS,
+          TechBadgeEnum.EXPRESS,
+          TechBadgeEnum.MONGODB
         ],
-        title: 'FunFit'
+        title: 'FunFit',
+        position: 'left'
       }
     }
   ],
@@ -55,14 +66,16 @@ const PROJECTS: TCardProject[][] = [
           'First real estate investment platform in Bolivia completely online, connected with Web 3, Blockchain and smart contracts',
         image: '/assets/Home/Anft.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Redux',
-          'Typescript',
-          'Tailwind',
-          'Web3'
+          TechBadgeEnum.NESTJS,
+          TechBadgeEnum.NEXTJS,
+          TechBadgeEnum.REACT,
+          TechBadgeEnum.REDUX,
+          TechBadgeEnum.BLOCKCHAIN,
+          TechBadgeEnum.METAMASK,
+          TechBadgeEnum.POSTGRES
         ],
-        title: 'ANFT'
+        title: 'ANFT',
+        position: 'right'
       }
     },
     {
@@ -73,14 +86,16 @@ const PROJECTS: TCardProject[][] = [
           'Created "Los Angeles Clinic" digital presence: a customized website with comprehensive company info, paired with an intuitive internal system for doctor scheduling, enhancing clinic efficiency and patient care.',
         image: '/assets/Home/Clinica_angeles.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Redux',
-          'Apollo',
-          'Graphql',
-          'MySql'
+          TechBadgeEnum.NEXTJS,
+          TechBadgeEnum.REACT,
+          TechBadgeEnum.REDUX,
+          TechBadgeEnum.GRAPHQL,
+          TechBadgeEnum.TAILWIND,
+          TechBadgeEnum.EXPRESS,
+          TechBadgeEnum.POSTGRES
         ],
-        title: 'Clinica Los Angeles'
+        title: 'Clinica Los Angeles',
+        position: 'right'
       }
     },
     {
@@ -91,16 +106,15 @@ const PROJECTS: TCardProject[][] = [
           'Point of sale system, with multi-branch sales record with inventory record, product production and quote for events',
         image: '/assets/Home/el_sao.png',
         technologies: [
-          'NextJs',
-          'React',
-          'Redux',
-          'Typescript',
-          'Graphql',
-          'Node',
-          'Express',
-          'MongoDb'
+          TechBadgeEnum.ANGULAR,
+          TechBadgeEnum.REDUX,
+          TechBadgeEnum.NODEJS,
+          TechBadgeEnum.NESTJS,
+          TechBadgeEnum.GRAPHQL,
+          TechBadgeEnum.MONGODB
         ],
-        title: 'El Sao'
+        title: 'El Sao',
+        position: 'right'
       }
     }
   ]
@@ -122,6 +136,7 @@ function Projects() {
                     description={project.project.description}
                     title={project.project.title}
                     technologies={project.project.technologies}
+                    position={project.project.position}
                   />
                 </div>
               ))}
@@ -138,6 +153,7 @@ function Projects() {
                     image={project.project.image}
                     title={project.project.title}
                     technologies={project.project.technologies}
+                    position={project.project.position}
                   />
                 </div>
               ))}

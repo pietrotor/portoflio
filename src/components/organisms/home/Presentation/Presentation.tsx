@@ -1,4 +1,8 @@
+import { motion } from 'framer-motion'
+
 import { Button, ButttonVariantsEnum } from '@components/atoms'
+
+const TITLE = 'Full Stack Developer'.split(' ')
 
 function Presentation() {
   const downloadFile = () => {
@@ -32,10 +36,24 @@ function Presentation() {
         <h1 className="text-[75px]">
           Hi, I'm <span className="text-secondary">Pietro</span>
         </h1>
-        <h3 className="font-medium">Fullstack Developer</h3>
+        {TITLE.map((word, i) => (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 2,
+              delay: i / 10
+            }}
+            key={i}
+          >
+            {word}{' '}
+          </motion.span>
+        ))}
+        {/* <h3 className="font-medium">Full Stack Developer</h3> */}
+
         <p>
           Developer with{' '}
-          <span className="font-semibold text-white">3 year of experience</span>
+          <span className="font-semibold text-white">4 year of experience</span>
           , from Bolivia. Committed about creating user experiences and web
           applications. Dedicated to delivering exceptional results and
           maintaining meticulous attention to detail in all my work.

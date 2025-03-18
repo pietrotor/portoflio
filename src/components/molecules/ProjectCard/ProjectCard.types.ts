@@ -4,6 +4,7 @@ interface IProjectCard {
   title: string
   description?: string
   technologies?: string[]
+  position?: 'left' | 'right'
 }
 
 export type { IProjectCard }

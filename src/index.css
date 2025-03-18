@@ -57,6 +57,10 @@ html {
     font-weight: 900;
   }
 
+  body {
+    @apply overflow-x-hidden;
+  }
+
   h1 {
     @apply mb-2 text-6xl font-bold;
   }
